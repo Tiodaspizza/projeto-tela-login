@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso TailwindCSS</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <main
+      class="w-full min-h-screen flex flex-col md:flex-row items-center justify-center mx-auto"
+    >
+      <section
+        class="w-full flex-1 flex justify-center items-center  flex-col bg-slate-300 p-4"
+      >
+        <div
+          class="w-full max-w-xl flex jus items-center flex-col"
+        >
+          <img
+            class="w-36 hover:scale-110 duration-300"
+            src="images/user.png"
+            alt="Logo do usuario"
+          />
+          <h1 class="text-4xl font-bold mb-7">login</h1>
+          <input
+            class="w-full p-2 rounded-lg  outline-none bg-gray-50 focus:bg-white"
+            type="text"
+            placeholder="Didige o seu Email..."
+          />
+
+          <input
+            class="w-full p-2 rounded-lg  outline-none bg-gray-50 focus:bg-white mt-4"
+            type="password"
+            placeholder="*********"
+          />
+
+         <div class="flex  items-center  justify-between w-full mt-4 " >
+          
+          <div class="flex items-center justify-center  gap-2  " >
+            
+            <input type="checkbox">
+            <label class="font-medium" >Lembrar senha</label>
+          
+          </div>
+         <a class="text-blue-600 hover:text-sky-500 duration-200 " href="#">Esqueceu a senha ?</a>
+        </div>
+        <button class="w-full bg-blue-600 p-2 rounded-lg text-lg font-medium text-white mt-4 hover:bg-blue-500 ">Acessar</button>
+        <p>Nao possui conta ?
+        <a  class="font-medium text-sky-600 hover:text-sky-400" href="#">Criar uma conta ?</a>
+      </p>
+        </div>
+      </section>
+      <section class="hidden md:flex w-full flex-1 bg-blue-600  h-screen items-center justify-center flex-col p-4 gap-8 ">
+        <h1  class="text-white text-2xl text-center max-w-lg lg:text-4xl ">Domine as <strong>tecnologias mais buscadas</strong> pelo mercado!  </h1>
+        <img class="w-3/4 lg:w-full lg:max-w-md " src="images/techs.png" alt="tecnologias usadas no mercado">
+      </section>
+    </main>
+  </body>
+</html>
